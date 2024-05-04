@@ -22,6 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
    - name: Get Commit Hash
       id: getHash
       run: |
