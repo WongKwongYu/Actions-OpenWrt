@@ -23,7 +23,7 @@ jobs:
 
     steps:
     
-   - name: Get Commit Hash
+    - name: Get Commit Hash
       id: getHash
       run: |
         git clone https://github.com/coolsnowwolf/lede --filter=blob:none
