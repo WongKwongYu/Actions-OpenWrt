@@ -61,7 +61,7 @@ jobs:
           ${{steps.getHash.outputs.SHA_04}}\
           ${{steps.getHash.outputs.SHA_05}}" >> $GITHUB_OUTPUT
 
-   - name: Get Commit Hash
+    - name: Get Commit Hash
       id: cacheHash
       uses: actions/cache@main
       with:
