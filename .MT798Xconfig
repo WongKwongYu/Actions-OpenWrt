@@ -5441,7 +5441,7 @@ CONFIG_BIND_ENABLE_DOH=y
 CONFIG_PACKAGE_chinadns-ng=y
 CONFIG_PACKAGE_ddns-scripts=y
 # CONFIG_PACKAGE_ddns-scripts_aliyun is not set
-CONFIG_PACKAGE_ddns-scripts_cloudflare=y
+CONFIG_PACKAGE_ddns-scripts-cloudflare=y
 # CONFIG_PACKAGE_ddns-scripts_dnspod is not set
 # CONFIG_PACKAGE_ddns-scripts_freedns_42_pl is not set
 # CONFIG_PACKAGE_ddns-scripts_godaddy.com-v1 is not set
