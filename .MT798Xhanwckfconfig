@@ -4,6 +4,7 @@
 #
 CONFIG_MODULES=y
 CONFIG_HAVE_DOT_CONFIG=y
+CONFIG_DEFAULT_TARGET_mediatek_mt7981=y
 # CONFIG_TARGET_sunxi is not set
 # CONFIG_TARGET_apm821xx is not set
 # CONFIG_TARGET_ath25 is not set
@@ -43,7 +44,7 @@ CONFIG_TARGET_mediatek=y
 # CONFIG_TARGET_x86 is not set
 # CONFIG_TARGET_mediatek_mt7986 is not set
 CONFIG_TARGET_mediatek_mt7981=y
-# CONFIG_TARGET_MULTI_PROFILE is not set
+CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-spim-nor-rfb is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-spim-nand-2500wan-gmac2 is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-spim-nand-rfb is not set
@@ -57,7 +58,7 @@ CONFIG_TARGET_mediatek_mt7981=y
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-fpga-emmc is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-fpga-sd is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-360-t7 is not set
-CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-360-t7-108M=y
+# CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-360-t7-108M is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_abt_asr3000 is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_cetron_ct3003 is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-clt-r30b1 is not set
@@ -96,56 +97,211 @@ CONFIG_TARGET_mediatek_mt7981_DEVICE_mt7981-360-t7-108M=y
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_nradio_wt9103 is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_nradio_wt9103_512m is not set
 # CONFIG_TARGET_mediatek_mt7981_DEVICE_routerich_ax3000 is not set
+
+#
+# Target Devices
+#
+# CONFIG_TARGET_ALL_PROFILES is not set
+CONFIG_TARGET_PER_DEVICE_ROOTFS=y
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_abt_asr3000=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_abt_asr3000=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_cetron_ct3003=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_cetron_ct3003=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_cmcc_a10=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_cmcc_a10=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_cmcc_rax3000m-emmc=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_cmcc_rax3000m-emmc=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_cmcc_rax3000m=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_cmcc_rax3000m=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_cmcc_xr30-emmc=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_cmcc_xr30-emmc=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_cmcc_xr30=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_cmcc_xr30=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_glinet_gl-mt2500=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_glinet_gl-mt2500=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_glinet_gl-mt3000=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_glinet_gl-mt3000=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_glinet_gl-x3000 is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_glinet_gl-xe3000 is not set
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_h3c_nx30pro=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_h3c_nx30pro=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_honor_fur-602=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_honor_fur-602=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_ikuai_q3000 is not set
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_imou_lc-hx3001=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_imou_lc-hx3001=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_jcg_q30=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_jcg_q30=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_konka_komi-a31=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_konka_komi-a31=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_livinet_zr-3020=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_livinet_zr-3020=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-360-t7 is not set
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-360-t7-108M=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_mt7981-360-t7-108M=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-clt-r30b1=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_mt7981-clt-r30b1=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-clt-r30b1-112M=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_mt7981-clt-r30b1-112M=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-emmc-rfb is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-fpga-emmc is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-fpga-sd is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-fpga-snfi-nand is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-fpga-spim-nand is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-fpga-spim-nor is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-sd-rfb is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-snfi-nand-2500wan-p5 is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-spim-nand-2500wan-gmac2 is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-spim-nand-gsw is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-spim-nand-rfb is not set
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_mt7981-spim-nor-rfb is not set
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_newland_nl-wr8103=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_newland_nl-wr8103=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_newland_nl-wr9103=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_newland_nl-wr9103=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_nokia_ea0326gmp=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_nokia_ea0326gmp=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_nradio_wt9103=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_nradio_wt9103=""
+# CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_nradio_wt9103_512m is not set
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_routerich_ax3000=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_routerich_ax3000=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_ruijie_rg-x30e=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_ruijie_rg-x30e=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_ruijie_rg-x30e-firmware2=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_ruijie_rg-x30e-firmware2=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_ruijie_rg-x30e-stock=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_ruijie_rg-x30e-stock=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_ruijie_rg-x30e-pro=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_ruijie_rg-x30e-pro=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_ruijie_rg-x30e-pro-firmware2=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_ruijie_rg-x30e-pro-firmware2=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_ruijie_rg-x30e-pro-stock=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_ruijie_rg-x30e-pro-stock=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t-stock=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t-stock=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t-an8855=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t-an8855=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t-an8855-stock=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_xiaomi_mi-router-ax3000t-an8855-stock=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_xiaomi_mi-router-wr30u-112m=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_xiaomi_mi-router-wr30u-112m=""
+CONFIG_TARGET_DEVICE_mediatek_mt7981_DEVICE_xiaomi_mi-router-wr30u-stock=y
+CONFIG_TARGET_DEVICE_PACKAGES_mediatek_mt7981_DEVICE_xiaomi_mi-router-wr30u-stock=""
+# end of Target Devices
+
 CONFIG_HAS_SUBTARGETS=y
 CONFIG_HAS_DEVICES=y
 CONFIG_TARGET_BOARD="mediatek"
 CONFIG_TARGET_SUBTARGET="mt7981"
-CONFIG_TARGET_PROFILE="DEVICE_mt7981-360-t7-108M"
 CONFIG_TARGET_ARCH_PACKAGES="aarch64_cortex-a53"
 CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mcpu=cortex-a53"
 CONFIG_CPU_TYPE="cortex-a53"
 CONFIG_LINUX_5_4=y
 CONFIG_DEFAULT_autocore-arm=y
+CONFIG_MODULE_DEFAULT_autocore-arm=y
+CONFIG_MODULE_DEFAULT_automount=y
 CONFIG_DEFAULT_base-files=y
+CONFIG_MODULE_DEFAULT_base-files=y
+CONFIG_MODULE_DEFAULT_blkid=y
 CONFIG_DEFAULT_block-mount=y
+CONFIG_MODULE_DEFAULT_block-mount=y
+CONFIG_MODULE_DEFAULT_blockdev=y
 CONFIG_DEFAULT_busybox=y
+CONFIG_MODULE_DEFAULT_busybox=y
 CONFIG_DEFAULT_ca-bundle=y
+CONFIG_MODULE_DEFAULT_ca-bundle=y
 CONFIG_DEFAULT_default-settings-chn=y
+CONFIG_MODULE_DEFAULT_default-settings-chn=y
 CONFIG_DEFAULT_dnsmasq-full=y
+CONFIG_MODULE_DEFAULT_dnsmasq-full=y
 CONFIG_DEFAULT_dropbear=y
+CONFIG_MODULE_DEFAULT_dropbear=y
+CONFIG_MODULE_DEFAULT_f2fsck=y
+CONFIG_MODULE_DEFAULT_fdisk=y
 CONFIG_DEFAULT_firewall=y
+CONFIG_MODULE_DEFAULT_firewall=y
 CONFIG_DEFAULT_fstools=y
+CONFIG_MODULE_DEFAULT_fstools=y
+CONFIG_MODULE_DEFAULT_gdisk=y
 CONFIG_DEFAULT_iptables=y
+CONFIG_MODULE_DEFAULT_iptables=y
 CONFIG_DEFAULT_ipv6helper=y
+CONFIG_MODULE_DEFAULT_ipv6helper=y
+CONFIG_MODULE_DEFAULT_kmod-fs-f2fs=y
 CONFIG_DEFAULT_kmod-gpio-button-hotplug=y
+CONFIG_MODULE_DEFAULT_kmod-gpio-button-hotplug=y
+CONFIG_MODULE_DEFAULT_kmod-hwmon-pwmfan=y
 CONFIG_DEFAULT_kmod-ipt-raw=y
+CONFIG_MODULE_DEFAULT_kmod-ipt-raw=y
 CONFIG_DEFAULT_kmod-leds-gpio=y
+CONFIG_MODULE_DEFAULT_kmod-leds-gpio=y
+CONFIG_MODULE_DEFAULT_kmod-mmc=y
 CONFIG_DEFAULT_kmod-nf-nathelper=y
+CONFIG_MODULE_DEFAULT_kmod-nf-nathelper=y
 CONFIG_DEFAULT_kmod-nf-nathelper-extra=y
+CONFIG_MODULE_DEFAULT_kmod-nf-nathelper-extra=y
+CONFIG_MODULE_DEFAULT_kmod-nls-cp437=y
+CONFIG_MODULE_DEFAULT_kmod-nls-iso8859-1=y
+CONFIG_MODULE_DEFAULT_kmod-usb-net-rndis=y
+CONFIG_MODULE_DEFAULT_kmod-usb2=y
+CONFIG_MODULE_DEFAULT_kmod-usb3=y
 CONFIG_DEFAULT_libc=y
+CONFIG_MODULE_DEFAULT_libc=y
 CONFIG_DEFAULT_libgcc=y
+CONFIG_MODULE_DEFAULT_libgcc=y
 CONFIG_DEFAULT_libustream-openssl=y
+CONFIG_MODULE_DEFAULT_libustream-openssl=y
 CONFIG_DEFAULT_logd=y
+CONFIG_MODULE_DEFAULT_logd=y
+CONFIG_MODULE_DEFAULT_losetup=y
 CONFIG_DEFAULT_luci=y
+CONFIG_MODULE_DEFAULT_luci=y
 CONFIG_DEFAULT_luci-app-filetransfer=y
+CONFIG_MODULE_DEFAULT_luci-app-filetransfer=y
+CONFIG_MODULE_DEFAULT_luci-app-samba4=y
+CONFIG_MODULE_DEFAULT_luci-app-usb-printer=y
 CONFIG_DEFAULT_luci-compat=y
+CONFIG_MODULE_DEFAULT_luci-compat=y
+CONFIG_MODULE_DEFAULT_luci-i18n-usb-printer-zh-cn=y
 CONFIG_DEFAULT_luci-lib-base=y
+CONFIG_MODULE_DEFAULT_luci-lib-base=y
 CONFIG_DEFAULT_luci-lib-fs=y
+CONFIG_MODULE_DEFAULT_luci-lib-fs=y
 CONFIG_DEFAULT_luci-lib-ipkg=y
+CONFIG_MODULE_DEFAULT_luci-lib-ipkg=y
+CONFIG_MODULE_DEFAULT_mkf2fs=y
 CONFIG_DEFAULT_mtd=y
+CONFIG_MODULE_DEFAULT_mtd=y
 CONFIG_DEFAULT_mtk-smp=y
+CONFIG_MODULE_DEFAULT_mtk-smp=y
 CONFIG_DEFAULT_netifd=y
+CONFIG_MODULE_DEFAULT_netifd=y
 CONFIG_DEFAULT_opkg=y
+CONFIG_MODULE_DEFAULT_opkg=y
 CONFIG_DEFAULT_ppp=y
+CONFIG_MODULE_DEFAULT_ppp=y
 CONFIG_DEFAULT_ppp-mod-pppoe=y
+CONFIG_MODULE_DEFAULT_ppp-mod-pppoe=y
 CONFIG_DEFAULT_procd=y
+CONFIG_MODULE_DEFAULT_procd=y
 CONFIG_DEFAULT_uboot-envtools=y
+CONFIG_MODULE_DEFAULT_uboot-envtools=y
 CONFIG_DEFAULT_uci=y
+CONFIG_MODULE_DEFAULT_uci=y
 CONFIG_DEFAULT_uclient-fetch=y
+CONFIG_MODULE_DEFAULT_uclient-fetch=y
 CONFIG_DEFAULT_urandom-seed=y
+CONFIG_MODULE_DEFAULT_urandom-seed=y
 CONFIG_DEFAULT_urngd=y
+CONFIG_MODULE_DEFAULT_urngd=y
+CONFIG_MODULE_DEFAULT_usbutils=y
 CONFIG_DEFAULT_zoneinfo-asia=y
+CONFIG_MODULE_DEFAULT_zoneinfo-asia=y
 CONFIG_DEFAULT_zoneinfo-core=y
+CONFIG_MODULE_DEFAULT_zoneinfo-core=y
 CONFIG_HAS_FPU=y
 CONFIG_AUDIO_SUPPORT=y
 CONFIG_GPIO_SUPPORT=y
@@ -4984,7 +5140,7 @@ CONFIG_WOLFSSL_ALT_NAMES=y
 # CONFIG_PACKAGE_alsa-lib is not set
 # CONFIG_PACKAGE_antileech is not set
 # CONFIG_PACKAGE_argp-standalone is not set
-CONFIG_PACKAGE_bind-libs=y
+# CONFIG_PACKAGE_bind-libs is not set
 # CONFIG_PACKAGE_bluez-libs is not set
 # CONFIG_PACKAGE_boost is not set
 # CONFIG_boost-context-exclude is not set
@@ -5389,7 +5545,7 @@ CONFIG_PACKAGE_libusb-1.0=m
 CONFIG_PACKAGE_libustream-openssl=y
 # CONFIG_PACKAGE_libustream-wolfssl is not set
 CONFIG_PACKAGE_libuuid=y
-CONFIG_PACKAGE_libuv=y
+# CONFIG_PACKAGE_libuv is not set
 # CONFIG_PACKAGE_libuwifi is not set
 # CONFIG_PACKAGE_libv4l is not set
 # CONFIG_PACKAGE_libvorbis is not set
@@ -5572,7 +5728,7 @@ CONFIG_PACKAGE_luci-mod-system=y
 # CONFIG_PACKAGE_luci-app-cshark is not set
 # CONFIG_PACKAGE_luci-app-dawn is not set
 # CONFIG_PACKAGE_luci-app-dcwapd is not set
-CONFIG_PACKAGE_luci-app-ddns=y
+# CONFIG_PACKAGE_luci-app-ddns is not set
 # CONFIG_PACKAGE_luci-app-ddns-go is not set
 # CONFIG_PACKAGE_luci-app-diag-core is not set
 # CONFIG_PACKAGE_luci-app-diskman is not set
@@ -5590,7 +5746,7 @@ CONFIG_PACKAGE_luci-app-ddns=y
 # CONFIG_PACKAGE_luci-app-eqos-mtk is not set
 # CONFIG_PACKAGE_luci-app-fileassistant is not set
 # CONFIG_PACKAGE_luci-app-filebrowser is not set
-# CONFIG_PACKAGE_luci-app-filetransfer is not set
+CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-firewall=y
 # CONFIG_PACKAGE_luci-app-frpc is not set
 # CONFIG_PACKAGE_luci-app-frps is not set
@@ -5691,7 +5847,7 @@ CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
 # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
 # CONFIG_PACKAGE_luci-app-rp-pppoe-server is not set
-# CONFIG_PACKAGE_luci-app-samba4 is not set
+CONFIG_PACKAGE_luci-app-samba4=m
 # CONFIG_PACKAGE_luci-app-scutclient is not set
 # CONFIG_PACKAGE_luci-app-ser2net is not set
 # CONFIG_PACKAGE_luci-app-shadowsocks-libev is not set
@@ -5758,7 +5914,7 @@ CONFIG_PACKAGE_luci-app-turboacc-mtk=y
 # CONFIG_PACKAGE_luci-app-unblockneteasemusic is not set
 # CONFIG_PACKAGE_luci-app-unbound is not set
 CONFIG_PACKAGE_luci-app-upnp=y
-# CONFIG_PACKAGE_luci-app-usb-printer is not set
+CONFIG_PACKAGE_luci-app-usb-printer=m
 # CONFIG_PACKAGE_luci-app-usb3disable is not set
 # CONFIG_PACKAGE_luci-app-uugamebooster is not set
 # CONFIG_PACKAGE_luci-app-v2ray-server is not set
@@ -5883,39 +6039,7 @@ CONFIG_PACKAGE_default-settings-chn=y
 # CONFIG_PACKAGE_luci-i18n-base-vi is not set
 CONFIG_PACKAGE_luci-i18n-base-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-base-zh-tw is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-ar is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-bg is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-bn is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-ca is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-cs is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-da is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-de is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-el is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-en is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-es is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-fi is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-fr is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-he is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-hi is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-hu is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-it is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-ja is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-ko is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-mr is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-ms is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-no is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-pl is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-pt is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-pt-br is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-ro is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-ru is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-sk is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-sv is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-tr is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-uk is not set
-# CONFIG_PACKAGE_luci-i18n-ddns-vi is not set
-CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
-# CONFIG_PACKAGE_luci-i18n-ddns-zh-tw is not set
+CONFIG_PACKAGE_luci-i18n-filetransfer-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-firewall-ar is not set
 # CONFIG_PACKAGE_luci-i18n-firewall-bg is not set
 # CONFIG_PACKAGE_luci-i18n-firewall-bn is not set
@@ -5984,6 +6108,39 @@ CONFIG_PACKAGE_luci-i18n-mtwifi-cfg-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-opkg-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
+# CONFIG_PACKAGE_luci-i18n-samba4-ar is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-bg is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-bn is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-ca is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-cs is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-da is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-de is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-el is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-en is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-es is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-fi is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-fr is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-he is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-hi is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-hu is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-it is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-ja is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-ko is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-mr is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-ms is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-no is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-pl is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-pt is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-pt-br is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-ro is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-ru is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-sk is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-sv is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-tr is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-uk is not set
+# CONFIG_PACKAGE_luci-i18n-samba4-vi is not set
+CONFIG_PACKAGE_luci-i18n-samba4-zh-cn=m
+# CONFIG_PACKAGE_luci-i18n-samba4-zh-tw is not set
 CONFIG_PACKAGE_luci-i18n-turboacc-mtk-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-ar is not set
 # CONFIG_PACKAGE_luci-i18n-upnp-bg is not set
@@ -6018,6 +6175,7 @@ CONFIG_PACKAGE_luci-i18n-turboacc-mtk-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-vi is not set
 CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-upnp-zh-tw is not set
+CONFIG_PACKAGE_luci-i18n-usb-printer-zh-cn=m
 CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
 # CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-tw is not set
 # CONFIG_PACKAGE_luci-i18n-wol-ar is not set
@@ -6609,7 +6767,7 @@ CONFIG_PACKAGE_avahi-dbus-daemon=m
 # CONFIG_PACKAGE_bind-client is not set
 # CONFIG_PACKAGE_bind-dig is not set
 # CONFIG_PACKAGE_bind-dnssec is not set
-CONFIG_PACKAGE_bind-host=y
+# CONFIG_PACKAGE_bind-host is not set
 # CONFIG_PACKAGE_bind-nslookup is not set
 # CONFIG_PACKAGE_bind-rndc is not set
 # CONFIG_PACKAGE_bind-server is not set
@@ -6617,20 +6775,8 @@ CONFIG_PACKAGE_bind-host=y
 # CONFIG_PACKAGE_chinadns is not set
 CONFIG_PACKAGE_chinadns-ng=y
 # CONFIG_PACKAGE_ddns-go is not set
-CONFIG_PACKAGE_ddns-scripts=y
-CONFIG_PACKAGE_ddns-scripts-cloudflare=y
-# CONFIG_PACKAGE_ddns-scripts-cnkuai is not set
-# CONFIG_PACKAGE_ddns-scripts-digitalocean is not set
-# CONFIG_PACKAGE_ddns-scripts-dnspod is not set
-# CONFIG_PACKAGE_ddns-scripts-dnspod-com is not set
-# CONFIG_PACKAGE_ddns-scripts-freedns is not set
-# CONFIG_PACKAGE_ddns-scripts-gandi is not set
-# CONFIG_PACKAGE_ddns-scripts-godaddy is not set
-# CONFIG_PACKAGE_ddns-scripts-noip is not set
-# CONFIG_PACKAGE_ddns-scripts-nsupdate is not set
-# CONFIG_PACKAGE_ddns-scripts-route53 is not set
-CONFIG_PACKAGE_ddns-scripts-services=y
-# CONFIG_PACKAGE_ddns-scripts_aliyun is not set
+# CONFIG_PACKAGE_ddns-scripts is not set
+# CONFIG_PACKAGE_ddns-scripts-services is not set
 # CONFIG_PACKAGE_dhcp-forwarder is not set
 # CONFIG_PACKAGE_dns-forwarder is not set
 CONFIG_PACKAGE_dns2socks=y
@@ -6641,6 +6787,7 @@ CONFIG_PACKAGE_dns2tcp=y
 # CONFIG_PACKAGE_dnslookup is not set
 # CONFIG_PACKAGE_dnsproxy is not set
 # CONFIG_PACKAGE_drill is not set
+# CONFIG_PACKAGE_geoview is not set
 # CONFIG_PACKAGE_hostip is not set
 # CONFIG_PACKAGE_idn is not set
 # CONFIG_PACKAGE_idn2 is not set
