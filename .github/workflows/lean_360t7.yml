@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder MT798X
+name: OpenWrt Builder lean_360t7
 
 on:
   repository_dispatch:
