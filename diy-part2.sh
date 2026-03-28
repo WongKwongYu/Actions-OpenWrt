@@ -24,14 +24,14 @@ sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
 #rm -rf feeds/packages/lang/golang
 #git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
 
-# ===== 升级 golang 到 1.26 =====
-pushd feeds/packages/lang/golang
-sed -i 's/GO_VERSION:=.*/GO_VERSION:=1.26.0/g' Makefile
-sed -i '/GO_HASH:=/d' Makefile
-popd
-# ===== 解除 toolchain 限制 =====
-sed -i 's/GOTOOLCHAIN=local/GOTOOLCHAIN=auto/g' feeds/packages/lang/golang/Makefile
-echo "Golang upgraded to 1.26"
+# 修改 Go toolchain 版本（核心）
+sed -i 's/GO_VERSION:=.*/GO_VERSION:=1.26.0/g' toolchain/golang/Makefile
+# 防止 hash 校验失败（强烈建议加）
+sed -i '/GO_HASH:=/d' toolchain/golang/Makefile
+# 清理旧的 Go 编译缓存（必须）
+rm -rf staging_dir/hostpkg/go
+rm -rf build_dir/host/go*
+rm -rf tmp
 
 # 移除 openwrt feeds 自带的核心库
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
