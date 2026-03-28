@@ -19,10 +19,19 @@ sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
 # 备用科学插件：移除 openwrt feeds 自带的核心包
 #rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 #git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
-# 更新 golang 1.25 版本
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
 
+# 更新 golang 1.25 版本
+#rm -rf feeds/packages/lang/golang
+#git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
+
+# ===== 升级 golang 到 1.26 =====
+pushd feeds/packages/lang/golang
+sed -i 's/GO_VERSION:=.*/GO_VERSION:=1.26.0/g' Makefile
+sed -i '/GO_HASH:=/d' Makefile
+popd
+# ===== 解除 toolchain 限制 =====
+sed -i 's/GOTOOLCHAIN=local/GOTOOLCHAIN=auto/g' feeds/packages/lang/golang/Makefile
+echo "Golang upgraded to 1.26"
 
 # 移除 openwrt feeds 自带的核心库
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
