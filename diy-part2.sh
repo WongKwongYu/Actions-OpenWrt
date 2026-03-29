@@ -16,22 +16,9 @@ sed -i 's/192.168.1.1/192.168.22.1/g' package/base-files/files/bin/config_genera
 # Modify filename, add date prefix
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
 
-# 备用科学插件：移除 openwrt feeds 自带的核心包
-#rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
-#git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
-
-# 更新 golang 1.25 版本
-#rm -rf feeds/packages/lang/golang
-#git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
-
-# 修改 Go toolchain 版本（核心）
-sed -i 's/GO_VERSION:=.*/GO_VERSION:=1.26.0/g' toolchain/golang/Makefile
-# 防止 hash 校验失败（强烈建议加）
-sed -i '/GO_HASH:=/d' toolchain/golang/Makefile
-# 清理旧的 Go 编译缓存（必须）
-rm -rf staging_dir/hostpkg/go
-rm -rf build_dir/host/go*
-rm -rf tmp
+# 更新 golang 版本
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang -b 1.26 feeds/packages/lang/golang
 
 # 移除 openwrt feeds 自带的核心库
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
