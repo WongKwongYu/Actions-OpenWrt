@@ -17,8 +17,8 @@ sed -i 's/192.168.1.1/192.168.22.1/g' package/base-files/files/bin/config_genera
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
 
 # 更新 golang 版本
-#rm -rf feeds/packages/lang/golang
-#git clone https://github.com/kenzok8/golang -b 1.26 feeds/packages/lang/golang
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang -b 1.26 feeds/packages/lang/golang
 
 # 移除 openwrt feeds 自带的核心库
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
