@@ -1,6 +1,6 @@
 Update：
 
-2026.06.21 360t7用immImmortalWrt 24.10的源，x86用lean的源。
+2026.06.21 360t7用ImmortalWrt 24.10的源，x86用lean的源。
 
 
 默认ip：192.168.22.1 密码：password
