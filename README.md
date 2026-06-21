@@ -1,6 +1,6 @@
 Update：
 
-2024.11.23 lean的源360t7无线跑不到千兆，不知道为什么，现在主要用immImmortalWrt 23.05的源，x86不受影响。
+2026.06.21 360t7用immImmortalWrt 24.10的源，x86用lean的源。
 
 
 默认ip：192.168.22.1 密码：password
